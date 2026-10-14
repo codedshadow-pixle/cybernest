@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,22 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#080808">
   <meta name="description" content="Jayesh — Student, coder and gamer. Explore my profile, Instagram and GitHub.">
-
   <title>Jayesh | Profile</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
   <style>
     :root {
-      --white: #ffffff;
+      --white: #fff;
       --muted: #b5b5b5;
-      --soft-white: rgba(255, 255, 255, 0.08);
-      --border: rgba(255, 255, 255, 0.18);
+      --border: rgba(255, 255, 255, .18);
       --background: #080808;
     }
 
@@ -47,7 +44,7 @@
       text-decoration: none;
     }
 
-    /* Full-screen background video */
+    /* Background video */
 
     .background {
       position: fixed;
@@ -72,20 +69,20 @@
       background:
         linear-gradient(
           90deg,
-          rgba(0, 0, 0, 0.96) 0%,
-          rgba(0, 0, 0, 0.82) 36%,
-          rgba(0, 0, 0, 0.30) 75%,
-          rgba(0, 0, 0, 0.48) 100%
+          rgba(0, 0, 0, .96) 0%,
+          rgba(0, 0, 0, .82) 36%,
+          rgba(0, 0, 0, .30) 75%,
+          rgba(0, 0, 0, .48) 100%
         ),
         linear-gradient(
           0deg,
-          rgba(0, 0, 0, 0.88) 0%,
+          rgba(0, 0, 0, .88) 0%,
           transparent 35%,
-          rgba(0, 0, 0, 0.20) 100%
+          rgba(0, 0, 0, .20) 100%
         );
     }
 
-    /* Top navigation */
+    /* Navigation */
 
     .topbar {
       position: absolute;
@@ -103,7 +100,7 @@
       font-family: "Space Grotesk", sans-serif;
       font-size: 19px;
       font-weight: 700;
-      letter-spacing: -0.5px;
+      letter-spacing: -.5px;
     }
 
     .brand span {
@@ -117,7 +114,7 @@
       text-transform: uppercase;
     }
 
-    /* Audio button */
+    /* Speaker button */
 
     .speaker-button {
       position: fixed;
@@ -130,16 +127,16 @@
       place-items: center;
       border: 1px solid var(--border);
       border-radius: 50%;
-      background: rgba(15, 15, 15, 0.60);
+      background: rgba(15, 15, 15, .60);
       color: white;
       font-size: 17px;
       cursor: pointer;
       backdrop-filter: blur(12px);
-      transition: background 0.3s, transform 0.3s, border-color 0.3s;
+      transition: background .3s, transform .3s, border-color .3s;
     }
 
     .speaker-button:hover {
-      background: rgba(255, 255, 255, 0.15);
+      background: rgba(255, 255, 255, .15);
       border-color: white;
       transform: scale(1.06);
     }
@@ -164,7 +161,6 @@
         opacity: 0;
         transform: translateY(22px);
       }
-
       to {
         opacity: 1;
         transform: translateY(0);
@@ -195,21 +191,21 @@
       font-size: clamp(58px, 9vw, 105px);
       font-weight: 600;
       letter-spacing: -6px;
-      line-height: 0.98;
+      line-height: .98;
     }
 
     h1 a {
-      transition: opacity 0.3s;
+      transition: opacity .3s;
     }
 
     h1 a:hover {
-      opacity: 0.72;
+      opacity: .72;
     }
 
     .outline-text {
       display: block;
       color: transparent;
-      -webkit-text-stroke: 1px rgba(255, 255, 255, 0.8);
+      -webkit-text-stroke: 1px rgba(255, 255, 255, .8);
     }
 
     .role {
@@ -242,11 +238,11 @@
       gap: 11px;
       border: 1px solid var(--border);
       border-radius: 5px;
-      background: rgba(255, 255, 255, 0.055);
+      background: rgba(255, 255, 255, .055);
       color: white;
       font-size: 13px;
       font-weight: 500;
-      transition: 0.3s ease;
+      transition: .3s ease;
       backdrop-filter: blur(10px);
     }
 
@@ -266,7 +262,7 @@
     .introduction {
       max-width: 510px;
       padding-top: 25px;
-      border-top: 1px solid rgba(255, 255, 255, 0.22);
+      border-top: 1px solid rgba(255, 255, 255, .22);
     }
 
     .introduction p {
@@ -294,28 +290,39 @@
       width: 100%;
       padding: 25px 7%;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
       gap: 15px;
-      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      border-top: 1px solid rgba(255, 255, 255, .12);
       color: #999;
       font-size: 11px;
     }
 
     .footer a {
       color: white;
-      transition: opacity 0.25s;
+      transition: opacity .25s;
     }
 
     .footer a:hover {
-      opacity: 0.65;
+      opacity: .65;
     }
 
     .footer-right {
       letter-spacing: 1px;
+      line-height: 1.7;
+      text-align: right;
     }
 
-    /* Responsive layout */
+    /* Powered by appears below copyright */
+
+    .powered-by {
+      margin-top: 4px;
+      font-size: 11px;
+      letter-spacing: 0;
+      color: #999;
+    }
+
+    /* Desktop */
 
     @media (min-width: 1100px) {
       .page {
@@ -332,6 +339,8 @@
         font-size: 108px;
       }
     }
+
+    /* Mobile */
 
     @media (max-width: 600px) {
       .topbar {
@@ -356,7 +365,7 @@
       .page {
         min-height: 100svh;
         align-items: flex-start;
-        padding: 145px 24px 115px;
+        padding: 145px 24px 45px;
       }
 
       .profile {
@@ -376,7 +385,7 @@
 
       .role {
         font-size: 12px;
-        letter-spacing: 0.5px;
+        letter-spacing: .5px;
         line-height: 1.8;
       }
 
@@ -406,24 +415,29 @@
       .footer {
         position: relative;
         padding: 20px 24px;
-        flex-wrap: wrap;
+        justify-content: flex-end;
         font-size: 10px;
       }
 
       .footer-right {
-        letter-spacing: 0.5px;
+        letter-spacing: .5px;
+        text-align: right;
+      }
+
+      .powered-by {
+        font-size: 10px;
       }
 
       .background-overlay {
         background:
           linear-gradient(
             90deg,
-            rgba(0, 0, 0, 0.91),
-            rgba(0, 0, 0, 0.60)
+            rgba(0, 0, 0, .91),
+            rgba(0, 0, 0, .60)
           ),
           linear-gradient(
             0deg,
-            rgba(0, 0, 0, 0.90),
+            rgba(0, 0, 0, .90),
             transparent 80%
           );
       }
@@ -438,8 +452,8 @@
       *::before,
       *::after {
         scroll-behavior: auto !important;
-        animation-duration: 0.01ms !important;
-        transition-duration: 0.01ms !important;
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
       }
     }
   </style>
@@ -495,81 +509,88 @@
       </div>
 
       <!-- Social links -->
-<nav class="socials" aria-label="Social profiles">
+      <nav class="socials" aria-label="Social profiles">
 
-  <a class="social-link"
-     href="https://www.instagram.com/not_ur_jayesh/"
-     target="_blank"
-     rel="noopener noreferrer">
-    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-    <span>Instagram</span>
-    <i class="fa-solid fa-arrow-up-right-from-square"
-       aria-hidden="true"></i>
-  </a>
+        <a class="social-link"
+           href="https://www.instagram.com/not_ur_jayesh/"
+           target="_blank"
+           rel="noopener noreferrer">
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          <span>Instagram</span>
+          <i class="fa-solid fa-arrow-up-right-from-square"
+             aria-hidden="true"></i>
+        </a>
 
-  <a class="social-link"
-     href="https://codedshadow-pixle.github.io/llvm-project/"
-     target="_blank"
-     rel="noopener noreferrer">
-    <i class="fa-solid fa-globe" aria-hidden="true"></i>
-    <span>Main site</span>
-    <i class="fa-solid fa-arrow-up-right-from-square"
-       aria-hidden="true"></i>
-  </a>
+        <a class="social-link"
+           href="https://codedshadow-pixle.github.io/llvm-project/"
+           target="_blank"
+           rel="noopener noreferrer">
+          <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          <span>Main site</span>
+          <i class="fa-solid fa-arrow-up-right-from-square"
+             aria-hidden="true"></i>
+        </a>
 
-</nav>
-    
+      </nav>
 
       <!-- Introduction -->
-    
-<div class="introduction">
+      <div class="introduction">
 
-  <p>
-    Hi, I'm Jayesh! I'm passionate about music, gaming, technology,
-    and coding. I enjoy connecting with people and spending time
-    with friends.
-  </p>
+        <p>
+          Hi, I'm Jayesh! I'm passionate about music, gaming, technology,
+          and coding. I enjoy connecting with people and spending time
+          with friends.
+        </p>
 
-  <p>
-    I'm a student who believes in continuous learning, exploring
-    new ideas, and developing my technical skills through
-    hands-on experience.
-  </p>
+        <p>
+          I'm a student who believes in continuous learning, exploring
+          new ideas, and developing my technical skills through
+          hands-on experience.
+        </p>
 
-  <p>
-    Feel free to explore my Instagram and GitHub profiles to
-    learn more about my interests and projects. I'm always happy
-    to discover new music and connect with like-minded people.
-  </p>
+        <p>
+          Feel free to explore my Instagram and GitHub profiles to
+          learn more about my interests and projects. I'm always happy
+          to discover new music and connect with like-minded people.
+        </p>
 
-  <p>
-    Thank you for visiting my profile. Have a wonderful day! 😊
-  </p>
+        <p>
+          Thank you for visiting my profile. Have a wonderful day! 😊
+        </p>
 
-</div>
+      </div>
 
-</section>
-</main>
+    </section>
+  </main>
 
-      <!-- Footer -->
+  <!-- Footer -->
   <footer class="footer">
-    <div>
-      Powered by
-      <a href="https://www.instagram.com/not_ur_jayesh/"
-         target="_blank"
-         rel="noopener noreferrer">Jayesh</a>
-      &nbsp;|&nbsp;
-      <a href="https://github.com/codedshadow-pixle"
-         target="_blank"
-         rel="noopener noreferrer">codedshadow</a>
+
+    <div class="footer-right">
+
+      <div>
+        MADE WITH CARE <span aria-hidden="true">♡</span> 2026
+      </div>
+
+      <div>
+        © 2025 Jayesh Godara. All Rights Reserved.
+      </div>
+
+      <!-- Powered by is now below copyright -->
+      <div class="powered-by">
+        Powered by
+        <a href="https://www.instagram.com/not_ur_jayesh/"
+           target="_blank"
+           rel="noopener noreferrer">Jayesh</a>
+        &nbsp;|&nbsp;
+        <a href="https://github.com/codedshadow-pixle"
+           target="_blank"
+           rel="noopener noreferrer">codedshadow</a>
+      </div>
+
     </div>
-    
-<div class="footer-right">
-  MADE WITH CARE <span aria-hidden="true">♡</span> 2026
-  <br>
-  © 2025 Jayesh Godara. All Rights Reserved.
-</div>
-</footer>
+
+  </footer>
 
   <script>
     const video = document.getElementById("bgvid");
@@ -602,7 +623,6 @@
 
     speakerButton.addEventListener("click", async () => {
       if (video.muted || video.volume === 0) {
-        // User interaction enables an attempt to play audio.
         video.volume = 0.7;
         video.muted = false;
 
@@ -622,7 +642,7 @@
       }
     });
 
-    // If the browser cannot autoplay the video, retry muted playback.
+    // Start background video muted.
     video.play().catch(() => {
       video.muted = true;
       video.volume = 0;
